@@ -54,14 +54,15 @@
 				},
 				multiplex: {
 					// Example values. To generate your own, see the socket.io server instructions.
-					secret: '16046941172349737801', // Obtained from the socket.io server. Gives this (the master) control of the presentation
-					id: 'ba3de982323c19d6', // Obtained from socket.io server
+					secret: '16079428255931371693', // Obtained from the socket.io server. Gives this (the master) control of the presentation
+					id: 'e4f58391ab15991a', // Obtained from socket.io server
 					url: 'https://reveal-multiplex.glitch.me/'// Location of socket.io server
 				},
 
   				// Don't forget to add the dependencies
   				dependencies: [
     			{ src: 'https://reveal-multiplex.glitch.me/socket.io/socket.io.js', async: true },
+				{ src: 'https://reveal-multiplex.glitch.me/master.js', async: true },
     			{ src: 'https://reveal-multiplex.glitch.me/client.js', async: true }
   				],
 				// Learn about plugins: https://revealjs.com/plugins/
