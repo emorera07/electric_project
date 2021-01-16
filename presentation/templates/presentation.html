@@ -3,6 +3,8 @@
 
 {% block content %}
 
+<div class="home_page"><p><a href='/home_page'>pagina de inicio</a></p></div>
+
 <section>
     <h1>Contenido</h1>
     <p>Descripción del contenido a mostrar en una presentación típica del curso de Modelos Probabilísticos de Señales y Sistemas</p>
@@ -23,55 +25,7 @@
         <li>Código interactivo</li>
         <li>Participación</li>
     </ul>
-</section>
-<section>
-    <section>
-        <h3>Radio Buttons example</h3>
-        <h4><i class="fas fa-bookmark"></i></h4>
-        <p>Seleccione su color favorito</p>
-        <form action="" method="POST">{% csrf_token %}
-            <p>
-                <input hidden id="user" name="user" value={{user.username}}><br>
-                <input type="radio" id="color1" name="color" value="Rojo">
-                <label for="color1"> Rojo </label><br>
-                <input type="radio" id="color2" name="color" value="Azul">
-                <label for="color2"> Azul </label><br>
-                <input type="radio" id="color3" name="color" value="Verde">
-                <label for="color3"> Verde </label>
-            </p>
-
-            <p>
-                <button type="submit" value="Submit">submit </button> 
-            </p>
-            
-        </form> 
-    </section>
-    <section>
-        <h3>Radio Buttons example</h3>
-        <h4><i class="fas fa-bookmark"></i></h4>
-        <p>La respuesta del usuario {{respuesta.user}} es: {{respuesta.color}}</p>
-    </section>
-</section>    
-<section>
-    <section>
-        <h3>Range Field</h3>
-        <h4><i class="fas fa-bookmark"></i></h4>
-        <p>Escoja un rango deceado de Volumen</p>
-        <form action="" method="POST">{% csrf_token %}
-            <input hidden id="user" name="user" value={{user.username}}><br>
-                <label for="vol">Volumen (Entre 0 y 50):</label>
-                <input type="range" id="vol" name="vol" min="0" max="50">
-            <p>
-                <button type="submit" value="Submit">submit </button> 
-            </p>
-            
-        </form> 
-    </section>
-    <section>
-        <h3>Range Field example</h3>
-        <h4><i class="fas fa-bookmark"></i></h4>
-        <p>La respuesta del usuario</p>{{respuesta.user}}<p> es: {{respuesta.vol}}</p>
-    </section>
+    
 </section>
 <section>
     <section>
@@ -157,7 +111,10 @@
     <section>
         <h3>Multimedia</h3>
         <h4><i class="fas fa-photo-video"></i></h4>
-        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section>
+        <h3>PDF</h3>
+        <iframe data-src="{% static 'Proyecto_electrico.pdf' %}" width="445" height="355" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" style="border:3px solid #666; margin-bottom:5px; max-width: 100%;" allowfullscreen> </iframe>
     </section>
     <section>
         <h3>Audio</h3>
@@ -165,7 +122,12 @@
     </section>
     <section>
         <h3>Video</h3>
-
+        <p>¿Por qué "probabilidad igual a 0" no significa "imposible"?</p>
+        <center>
+        <video autoplay="true" loop="true" muted="true" width="640">
+            <source src="https://www.youtube.com/watch?v=ZA4JkHKZM50&list=PLZHQObOWTQDOjmo3Y6ADm0ScWAlEXf-fp&index=2" type="video/mp4"> Your browser does not support the video tag.
+        </video>
+        </center> 
     </section>
 </section>
 
@@ -214,14 +176,63 @@
 </section>
 
 <section>
+    <section>
     <h3>Participación</h3>
     <h4><i class="fas fa-tasks"></i></h4>
     <p>Lorem ipsum dolor sit amet.</p>
-</section>
+    </section>
+    <section>
+        <h3>Radio Buttons example</h3>
+        <h4><i class="fas fa-bookmark"></i></h4>
+        <p>Seleccione su color favorito</p>
+        <form action="" method="POST">{% csrf_token %}
+            <p>
+                <input hidden id="user" name="user" value={{user.username}}><br>
+                <input type="radio" id="color1" name="color" value="Rojo">
+                <label for="color1"> Rojo </label><br>
+                <input type="radio" id="color2" name="color" value="Azul">
+                <label for="color2"> Azul </label><br>
+                <input type="radio" id="color3" name="color" value="Verde">
+                <label for="color3"> Verde </label>
+            </p>
 
+            <p>
+                <button type="submit" value="Submit">submit </button> 
+            </p>        
+        </form> 
+    </section>
+    <section>
+        <h3>Radio Buttons example</h3>
+        <h4><i class="fas fa-bookmark"></i></h4>
+        <p>La respuesta del usuario {{respuesta.user}} es: {{respuesta.color}}</p>
+    </section>
+</section>    
 <section>
-    <h3></h3>
-
+    <section>
+        <h3>Participación</h3>
+        <h4><i class="fas fa-tasks"></i></h4>
+        <p>Lorem ipsum dolor sit amet.</p>
+    </section>
+    <section>
+        <h3>Range Field</h3>
+        <h4><i class="fas fa-bookmark"></i></h4>
+        <p>Escoja un rango deceado de Volumen</p>
+        <form action="" method="POST">{% csrf_token %}
+            <input hidden id="user" name="user" value={{user.username}}><br>
+                <label for="vol">Volumen (Entre 0 y 50):</label>
+                <input type="range" id="vol" name="vol" min="0" max="50">
+            <p>
+                <button type="submit" value="Submit">submit </button> 
+            </p>
+            
+        </form> 
+    </section>
+    <section>
+        <h3>Range Field example</h3>
+        <h4><i class="fas fa-bookmark"></i></h4>
+        <p>La respuesta del usuario</p>{{respuesta.user}}<p> es: {{respuesta.vol}}</p>
+    </section>
 </section>
+
 
 {% endblock %}
