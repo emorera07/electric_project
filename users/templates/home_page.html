@@ -3,11 +3,11 @@
 {% block content %}
 <section id="home_page">   
     <h2>Proyecto Eléctrico</h2>
+    <p>Bienvenido <b>{{request.user.username}}</b>.</p>
     <p>
-        Bienvenido <b>{{request.user.username}}</b>.
-        Puede acceder a nuestra presentación interactiva a continuación:         
-        <a href="/presentation">Primera presentacion</a> 
-    </p>
+        Puede acceder a nuestra presentación interactiva a continuación:        
+        <a href="/presentation">Primera presentacion</a>
+    </p> 
     <hr />
     <a href="/logout">Cerrar sesión</a>    
 </section> 
