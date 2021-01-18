@@ -1,5 +1,5 @@
 
-{% extends 'base_master.html' %}
+{% extends 'base.html' %}
 
 {% block content %}
 
@@ -103,7 +103,7 @@
         <h3>Django</h3>
         <p>Estructura general de Django</p>
         {% load static %}
-        <img src="{% static 'static.png' %}" width="150" height="300">
+        <img src="{% static 'static.png' %}">
         <p><small>Elementos que contiene el directorio <i>static</i></small></p>
     </section>
 </section>
@@ -177,6 +177,7 @@
 </section>
 <section id="Multiplex">
     <section>
+        <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Multiplex</h3>
         <p>Multiplex es un <i>plugin</i> de Reveal.js para el control remoto de sus diapositivas web</p>
         {% load static %}
@@ -406,7 +407,7 @@
         <h3>Video</h3>
         {% load static %}
         <p>Ejemplo de utilización de video en la presentación, con el elemento <code>video</code> de HTML5.</p>         
-        <video data-autoplay controls src="{% static 'video_reveal.mp4' %}"></video>
+        <video data-autoplay width="408" height="350" controls src="{% static 'video_reveal.mp4' %}"></video>
     </section>
 </section>
 <section>
@@ -420,7 +421,7 @@
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Video</h3>
         <p>Ejemplo de uso de <code>iframe</code> para mostrar videos de youtube</p>    
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/ZA4JkHKZM50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        <iframe width="408" height="350" src="https://www.youtube.com/embed/ZA4JkHKZM50" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
         <p>¿Por qué "probabilidad igual a 0" no significa "imposible"? Tomado de <a href="https://www.3blue1brown.com/"> 3blue1brown</a></p>
     </section>
 </section>
