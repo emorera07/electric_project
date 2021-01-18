@@ -5,23 +5,24 @@
 
 <section>
     <div class="enlaces"><a href='/home_page'>pagina de inicio</a></div>
-    <h3>Proyecto Eléctrico</h3>
-    <h5>"Creación de una plataforma de presentación interactiva
-        remota con Django y Reveal.js"</h5>
-    <p>Estudiante: Emmanuel Morera Salas</p>
+    <h5>Proyecto Eléctrico</h5>
+    <h3>"Creación de una plataforma de presentación interactiva
+        remota con Django y Reveal.js"</h3>
+    <p>Emmanuel Morera Salas</p>
+    <p><small>18 de enero de 2021</small></p>
 </section>
 <section id="Agenda">
     <div class="enlaces"><a href='/home_page'>pagina de inicio</a></div>
     <h3>Agenda</h3>
     <p>
         <ul>
-            <li><a href="#/Objetivo_general">Objetivo General</a></li>
-            <li><a href="#/Objetivos_específicos">Objetivos Específicos</a></li>
+            <li><a href="#/Objetivo_general">Objetivo general</a></li>
+            <li><a href="#/Objetivos_específicos">Objetivos específicos</a></li>
             <li><a href="#/Django">Breve descripción de Django</a></li>
-            <li><a href="#/Reveal">Breve descripción de Reveal</a></li>
+            <li><a href="#/Reveal">Breve descripción de Reveal.js</a></li>
             <li><a href="#/Multiplex">Breve descripción de Multiplex</a></li>
-            <li><a href="#/Heroku">Breve descripción de Heroku y Github</a></li>
-            <li><a href="#/Modelo">Presentación Modelo</a></li>
+            <li><a href="#/Heroku">Breve descripción de Heroku y GitHub</a></li>
+            <li><a href="#/Modelo">Presentación de ejemplo</a></li>
             <li><a href="#/Conclusiones">Conclusiones</a></li>
             <li><a href="#/Recomendaciones">Recomendaciones</a></li>
         </ul>
@@ -29,10 +30,11 @@
 </section>
 <section id="Objetivo_general">
     <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
-    <h3>Objetivo General</h3>
-
-    <p><li>Crear un sitio web que permita la presentación remota y sincrónica de materiales de clase y que permita
-        el registro e interacción de usuarios.</li></p>
+    <h3>Objetivo general</h3>
+    <blockquote>
+    	Crear un sitio web que permita la presentación remota y sincrónica de materiales de clase y que permita
+        el registro e interacción de usuarios.
+    </blockquote>
 </section>
 <section id="Objetivos_específicos">
     <section>
@@ -40,8 +42,8 @@
     <h3>Objetivos específicos</h3>
     <p>
         <ul>
-            <li><a href="#/Django1">Django como plataforma back end, para manejo de bases de datos, usuarios y sesiones.</a></li>
-            <li><a href="#/Reveal1">Reveal.js como tecnología front end, para creación de presentaciones web con contenido multimedia.</a></li>
+            <li><a href="#/Django">Django</a> como plataforma <i>back end</i>, para manejo de bases de datos, usuarios y sesiones.</li>
+            <li><a href="#/Reveal">Reveal.js</a> como tecnología <i>front end</i>, para creación de presentaciones web con contenido multimedia.</li>
         </ul>
     </p>
     </section>
@@ -50,8 +52,8 @@
         <h3>Objetivos específicos</h3>
         <p>
             <ul>
-                <li><a href="#/Multiplex">Presentaciones remotas que almacenan respuestas de usuarios.</a></li>
-                <li><a href="#/Modelo">Crear una presentación Modelo</a></li>
+                <li>Implementar <a href="#/Multiplex">presentaciones remotas</a> que almacenan respuestas de usuarios.</li>
+                <li>Crear una <a href="#/Modelo">presentación de ejemplo</a>.</li>
             </ul>
         </p>
     </section>
@@ -60,8 +62,9 @@
     <section id="Django">
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Django</h3>
-        <p>Es un entorno de trabajo para el desarrollo de aplicaciones web basado en python</p>
-        <p>Basado en un modelo MTV (Model Template View)</p>   
+        <blockquote>
+        	Es un entorno de trabajo para el desarrollo de aplicaciones web basado en Python. Está basado en un modelo <strong>MTV</strong> (<i>Model Template View</i>)
+        </blockquote>  
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -69,7 +72,7 @@
         <p>Estructura general de Django</p>
         {% load static %}
         <img src="{% static 'principal_django.png' %}" width="150" height="300">
-        <p>Elementos que contiene el directorio principal</p>
+        <p><small>Elementos que contiene el directorio principal</small></p>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -77,7 +80,7 @@
         <p>Estructura general de Django</p>
         {% load static %}
         <img src="{% static 'electric_project.png' %}" width="150" height="300">
-        <p>Elementos que contiene el directorio electric_project</p>
+        <p><small>Elementos que contiene el directorio <i>electric_project</i></small></p>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -85,7 +88,7 @@
         <p>Estructura general de Django</p>
         {% load static %}
         <img src="{% static 'users.png' %}" width="150" height="300">
-        <p>Elementos que contiene el directorio users</p>
+        <p><small>Elementos que contiene el directorio <i>users</i></small></p>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -93,7 +96,7 @@
         <p>Estructura general de Django</p>
         {% load static %}
         <img src="{% static 'presentation.png' %}" width="150" height="300">
-        <p>Elementos que contiene el directorio presentation</p>
+        <p><small>Elementos que contiene el directorio <i>presentation</i></small></p>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -101,14 +104,16 @@
         <p>Estructura general de Django</p>
         {% load static %}
         <img src="{% static 'static.png' %}" width="150" height="300">
-        <p>Elementos que contiene el directorio static</p>
+        <p><small>Elementos que contiene el directorio <i>static</i></small></p>
     </section>
 </section>
 <section>
     <section id="Reveal">
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Reveal.js</h3>
-        <p>Es un entorno de trabajo para crear presentacioes web, utilizando estilos CSS y personalización por medio de JavaScript</p>
+        <blockquote>
+        	Es un entorno de trabajo para crear presentaciones web, utilizando estilos CSS y personalización y nuevas funcionalidades por medio de JavaScript.
+        </blockquote>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -129,9 +134,9 @@
                 ↪
                 id="highlight-theme">-
                 ...
-                </head>
+            </head>
         </code></pre>
-        <p>Cabecera de Reveal.js</p>
+        <p><small>Cabecera de Reveal.js</small></p>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -139,14 +144,14 @@
         <p>Estructura general de Reveal.js</p>
         <pre data-id="code-animation"><code class="html" data-trim data-line-numbers>
             <section id="home_page">
-            <h2>Proyecto Eléctrico</h2>
-            <p>
-            Bienvenido <b>user</b>.
-            Puede acceder a nuestra presentación interactiva a continuación:
-            <a href="/presentation">Primera presentacion</a>
-            </p>
-            <hr />
-            <a href="/logout">Cerrar sesión</a>
+	            <h2>Proyecto Eléctrico</h2>
+	            <p>
+	            Bienvenido <b>user</b>.
+	            Puede acceder a nuestra presentación interactiva a continuación:
+	            <a href="/presentation">Primera presentacion</a>
+	            </p>
+	            <hr />
+	            <a href="/logout">Cerrar sesión</a>
             </section>
         </code></pre>
         <p>Cuerpo de Reveal.js con contenido a presentar</p>
@@ -173,7 +178,7 @@
 <section id="Multiplex">
     <section>
         <h3>Multiplex</h3>
-        <p>Multiplex es un plugin de Reveal.js para el control remoto de sus diapositivas web</p>
+        <p>Multiplex es un <i>plugin</i> de Reveal.js para el control remoto de sus diapositivas web</p>
         {% load static %}
         <img src="{% static 'multiplex.png' %}">
         <p>Diagrama de comunicación de Multiplex</p>
@@ -182,7 +187,7 @@
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Multiplex</h3>
         <p>Estructura general de Multiplex</p>
-        <pre data-id="code-animation"><code class="html" data-trim data-line-numbers>
+        <pre data-id="code-animation"><code class="python" data-trim data-line-numbers>
             <body>
             multiplex: {
                 secret: '16079428255931371693', 
@@ -199,23 +204,24 @@
         <p>Inicialización de Reveal.js</p>
     </section>
 </section>
+
 <section id="Heroku">
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Heroku</h3>
-        <p>Servicio de plataforma en la nube (PaaS) basado en contenedores, que brinda soporte
-            para aplicaciones Django</p>
+        <p>Servicio de plataforma en la nube (<strong>PaaS</strong>) basado en contenedores, que brinda soporte para aplicaciones Django</p>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
-        <h3>Github</h3>
-        <p>Repositorio gratuito para alojar proyectos en línea, utilizando un control de versiones</p>
+        <h3>GitHub</h3>
+        <p>Repositorio gratuito para alojar proyectos en línea, utilizando un control de versiones tipo <strong>git</strong>.</p>
     </section>
 </section>
+
 <section id="Modelo">
     <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
-    <h2>Contenido</h2>
-    <p>Descripción del contenido a mostrar en una presentación típica del curso de Modelos Probabilísticos de Señales y Sistemas</p>
+    <h2>Presentación de ejemplo</h2>
+    <p>Descripción del contenido de una presentación típica del curso de Modelos Probabilísticos de Señales y Sistemas</p>
 </section>
 <section id="Secciones">
     <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
@@ -229,7 +235,7 @@
         <li><a href="#/Navegación_de_páginas_web">Navegación de páginas web</a></li>
         <li><a href="#/Código_estático">Código estático</a></li>
         <li><a href="#/Código_interactivo">Código interactivo</a></li>
-        <li><a href="#/Participación">Participación</a></li>
+        <li><a href="#/Participación">Participación de usuarios</a></li>
     </ul> 
 </section>
 <section id="Información_estática">
@@ -296,14 +302,14 @@
         <h3>Gráficas SVG</h3>
         {% load static %}
         <img src="{% static 'PDF.svg' %}" width="700" height="300">
-        <p>Tomado de la <a href="https://matplotlib.org/3.1.1/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py">pagina oficial de matplotlib</a> </p>
+        <p><small>Tomado de la <a href="https://matplotlib.org/3.1.1/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py">página oficial de Matplotlib</a></small></p>
     </section>
     <section id="Gráficas_PNG">
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>        
         <h3>Gráficas PNG</h3>
         {% load static %}
         <img src="{% static 'grafica_estatica.png' %}" width="700" height="300">
-        <p>Tomado de la <a href="https://matplotlib.org/3.1.1/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py">pagina oficial de matplotlib</a> </p>
+        <p><small>Tomado de la <a href="https://matplotlib.org/3.1.1/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py">página oficial de Matplotlib</a></small></p>
     </section>
 </section>
 
@@ -323,14 +329,14 @@
         <h3>Matplotlib</h3>
         {% load static %}
         <img src="{% static 'matplotlib.png' %}" width="700" height="300">
-        <p>Tomado de la <a href="https://matplotlib.org/3.1.1/gallery/pyplots/whats_new_99_mplot3d.html#sphx-glr-gallery-pyplots-whats-new-99-mplot3d-py">pagina oficial de matplotlib</a> </p>
+        <p><small>Tomado de la <a href="https://matplotlib.org/3.1.1/tutorials/introductory/pyplot.html#sphx-glr-tutorials-introductory-pyplot-py">página oficial de Matplotlib</a></small></p>
      </section>
     <section id="Bokeh">
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Bokeh</h3>
-        <p>Ejemplo de graficas interactivas con Bokeh</p>
+        <p>Ejemplo de gráficas interactivas con Bokeh</p>
             <iframe data-src="https://demo.bokeh.org/sliders" width="700" height="380" frameborder="2" marginwidth="2" marginheight="2"></iframe>
-        <p>Tomado de la <a href="https://demo.bokeh.org/sliders">pagina oficial de Bokeh</a></p>
+        <p><small>Tomado de la <a href="https://demo.bokeh.org/sliders">página oficial de Bokeh</a></small></p>
     </section>
 </section>
 
@@ -352,21 +358,21 @@
         <p>Histograma animado</p>
         {% load static %}
         <img src="{% static 'animated_histogram.gif' %}" width="700" height="300">
-        <p>Tomado de la <a href="https://matplotlib.org/3.1.1/gallery/animation/animated_histogram.html#sphx-glr-gallery-animation-animated-histogram-py">pagina oficial de matplotlib</a> </p>             
+        <p><small>Tomado de la <a href="https://matplotlib.org/3.1.1/gallery/animation/animated_histogram.html#sphx-glr-gallery-animation-animated-histogram-py">página oficial de Matplotlib</a></small></p>             
     </section>
     <section id="Animaciones_Matplotlib ">
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Matplotlib</h3>
         <p>Control interactivo con Matplotlib</p>
         <img src="{% static 'control_interactivo.gif' %}" width="700" height="300">
-        <p>Tomado de la <a href="https://sodocumentation.net/es/matplotlib/topic/6983/animaciones-y-tramas-interactivas-">SO documentación</a> </p>
+        <p><small>Tomado de <a href="https://sodocumentation.net/es/matplotlib/topic/6983/animaciones-y-tramas-interactivas-">SO Documentation</a></small></p>
     </section>
     <section id="Manim">
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Manim</h3>
         {% load static %}
         <img src="{% static 'Manim.png' %}" width="700" height="300">
-        <p>Tomado de <a href="https://github.com/3b1b/manim">La página oficial de Manim</a> </p>
+        <p><small>Tomado de la <a href="https://github.com/3b1b/manim">página oficial de Manim</a></small></p>
     </section>
 </section>
 
@@ -375,11 +381,11 @@
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Multimedia</h3>
         <h4><i class="fas fa-photo-video"></i></h4>
-        <p>Uso de archivos multimedioa como las siguientes:</p>
+        <p>Uso de archivos multimedia como las siguientes:</p>
         <ul>
-            <li><a href="#/PDF">Archivos PDF</a></li>
-            <li><a href="#/Audio">Archivos de Audio</a></li>
-            <li><a href="#/Video">Archivos de Video</a></li>
+            <li>Archivos <a href="#/PDF">PDF</a></li>
+            <li>Archivos de <a href="#/Audio">audio</a></li>
+            <li>Archivos de <a href="#/Video">video</a></li>
         </ul>
     </section>
     <section id="PDF">
@@ -392,14 +398,14 @@
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Audio</h3>
         {% load static %}
-        <p> Ejemplo de la utilización de audios en la presentación</p>
+        <p> Ejemplo de la utilización de audios en la presentación, con el elemento <code>audio</code> de HTML5.</p>
         <audio data-autoplay controls src="{% static 'audio_reveal.mp3' %}"></audio>
     </section>
     <section id="Video">
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Video</h3>
         {% load static %}
-        <p>Ejemplo de utilización de video en la presentación</p>         
+        <p>Ejemplo de utilización de video en la presentación, con el elemento <code>video</code> de HTML5.</p>         
         <video data-autoplay controls src="{% static 'video_reveal.mp4' %}"></video>
     </section>
 </section>
@@ -425,8 +431,8 @@
         <h4><i class="fas fa-code"></i></h4>
         <p>Visualización de segmentos de código.</p>
         <ul>
-            <li><a href="#/Código_python">Código python</a></li>
-            <li><a href="#/Jupyter">Libro de notas de Jupyter</a></li>
+            <li>Código <a href="#/Código_python">Python</a></li>
+            <li>Libro de notas de <a href="#/Jupyter">Jupyter</a></li>
         </ul>      
     </section>
     <section id="Código_python">
@@ -448,7 +454,7 @@
     <section id="Jupyter" data-background-iframe="https://view.datalore.jetbrains.com/notebook/8tuDM4WOzATFN9vLFLaUky?force_sso=true" data-background-interactive>
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
         <h3>Notebooks de Jupyter con Datalore</h3>
-        
+        <p>Existen ahora varias plataformas de visualización de <i>notebooks</i> de Jupyter, sin embargo aquí todavía no se han logrado incrustar.</p>
     </section>
 </section>
 
@@ -475,13 +481,13 @@
     <h4><i class="fas fa-tasks"></i></h4>
     <p>Ejemplos de participación de usuarios</p>
     <ul>
-        <li><a href="#/Radio_Buttons">Radio Buttons example</a></li>
-        <li><a href="#/Range_Field">Range Field Example</a></li>
+        <li><a href="#/Radio_Buttons">Ejemplo de selección única</a></li>
+        <li><a href="#/Range_Field">Ejemplo de deslizador</a></li>
     </ul> 
     </section>
     <section id="Radio_Buttons">
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
-        <h3>Radio Buttons example</h3>
+        <h3>Ejemplo de selección única</h3>
         <h4><i class="fas fa-bookmark"></i></h4>
         <p>Seleccione su color favorito</p>
         <form action="" method="POST">{% csrf_token %}
@@ -503,13 +509,13 @@
     </section>
     <section>
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
-        <h3>Radio Buttons Example</h3>
+        <h3>Ejemplo de selección única</h3>
         <h4><i class="fas fa-bookmark"></i></h4>
         <p>La respuesta del usuario {{respuesta.user}} es: {{respuesta.color}}</p>
     </section>  
     <section id="Range_Field">
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div> 
-        <h3>Range Field Example</h3>
+        <h3>Ejemplo de deslizador de rango</h3>
         <h4><i class="fas fa-bookmark"></i></h4>
         <p>Escoja un rango deceado de Volumen</p>
         <form action="" method="POST">{% csrf_token %}
@@ -523,7 +529,7 @@
     </section>
     <section>
         <div class="enlaces"><a href="#/Secciones">Secciones</a></div>
-        <h3>Range Field Example</h3>
+        <h3>Ejemplo de deslizador de rango</h3>
         <h4><i class="fas fa-bookmark"></i></h4>
         <p>La respuesta del usuario</p>{{respuesta.user}}<p> es: {{respuesta.vol}}</p>    
     </section>
@@ -533,7 +539,7 @@
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Conclusiones</h3>
         <ul>
-            <li>Se diseñó una aplicación web, capaz de manejar bases de datos y el flujo de información, con Django.</li>
+            <li>Se diseñó una aplicación web, capaz de manejar bases de datos y la presentación de información, con Django.</li>
             <li>Se utilizó la estructura interna de Django para la creación, autenticación y manejo de usuarios.</li>
         </ul>
     </section>
@@ -541,15 +547,15 @@
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Conclusiones</h3>
         <ul>
-            <li>Se definió una plantilla para la creación de diapositivas web con Reveal.js</li>
-            <li>Se creó una estructura de control remoto de diapositivas web basado en el plúgin Multiplex.</li>
+            <li>Se creó una plantilla de ejemplo para la creación de diapositivas web con Reveal.js, con material multimedia </li>
+            <li>Se creó una estructura de control remoto de diapositivas web basado en el plugin Multiplex.</li>
         </ul>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Conclusiones</h3>
         <ul>
-            <li>Se desarrolló una aplicación web que unifica los dos frameworks (Django y Reveals.js) capáz de contener respuesta de usuarios.</li>
+            <li>Se desarrolló una aplicación web que unifica los dos frameworks (Django y Reveals.js), capaz de recibir y mostrar respuesta de usuarios.</li>
         </ul>
     </section>
 </section>
@@ -558,22 +564,21 @@
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Recomendaciones</h3>
         <ul>
-            <li>Explorar la posibilidad de utilizar Django en sistemas operativos para servidores.</li>
-            <li>Explorar la posibilidad de implementar la aplicación por medio de una infraestructura de servicio web.</li>
+            <li>Utilizar Django en un servidor dedicado de la Universidad.</li>
         </ul>
     </section>
     <section>
         <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
         <h3>Recomendaciones</h3>
         <ul>
-            <li>Explorar la posibilidad de incorporar una conferencia de audio en el mismo sitio de la presentación.</li>
+            <li>Explorar la posibilidad de incorporar una conferencia de audio en el mismo sitio de la presentación (ejemplo: WebRTC).</li>
             <li>Explorar la posibilidad de incorporar chat grupal en el mismo sitio de la presentación.</li>
         </ul>
     </section>
 </section>
 <section>
     <div class="enlaces"><a href="#/Agenda">Agenda</a></div>
-    <h2>Sección de Preguntas</h2>
+    <h2>Sección de preguntas</h2>
 </section>
 <section>
     <div class="enlaces"><a href='/home_page'>pagina de inicio</a></div>
@@ -587,7 +592,6 @@
         <li>Hakim El Hattab. The html presentation framework.|reveal.js, 2020.<a href="https://revealjs.com/">Pagina oficial</a> </li>
         <li>Hakim El Hattab. Multiplex plugin, 2021.<a href="https://github.com/reveal/multiplex">Pagina oficial</a> </li>
         <li>salesforce company. Heroku, 2021.<a href="https:www.heroku.com">Pagina oficial</a> </li>
-
     </ul>
 </section>
 
